@@ -1,0 +1,38 @@
+{
+    "name": "backend",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "nodemon src/index.ts",
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "lint": "eslint . --max-warnings 0"
+    },
+    "dependencies": {
+        "express": "^4.19.2",
+        "cors": "^2.8.5",
+        "zod": "latest",
+        "winston": "^3.13.0",
+        "winston-daily-rotate-file": "^5.0.0",
+        "morgan": "^1.10.0",
+        "swagger-jsdoc": "^6.2.8",
+        "swagger-ui-express": "^5.0.0",
+        "@repo/db": "workspace:*",
+        "dotenv": "^16.4.5",
+        "drizzle-orm": "latest"
+    },
+    "devDependencies": {
+        "typescript": "^5",
+        "@types/express": "^4.17.21",
+        "@types/cors": "^2.8.17",
+        "@types/morgan": "^1.9.9",
+        "@types/swagger-jsdoc": "^6.0.4",
+        "@types/swagger-ui-express": "^4.1.6",
+        "@types/node": "^20",
+        "nodemon": "^3.1.0",
+        "ts-node": "^10.9.2",
+        "@repo/eslint-config": "workspace:*",
+        "@repo/typescript-config": "workspace:*",
+        "eslint": "^9"
+    }
+}

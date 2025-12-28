@@ -1,0 +1,14 @@
+import { Router } from 'express';
+import { userRouter } from './users';
+import { portfolioRouter } from './portfolios';
+import { assetRouter } from './assets';
+import { transactionRouter } from './transactions';
+
+const router: Router = Router();
+
+router.use('/users', userRouter);
+router.use('/portfolios', portfolioRouter);
+router.use('/assets', assetRouter);
+router.use('/transactions', transactionRouter);
+
+export { router };

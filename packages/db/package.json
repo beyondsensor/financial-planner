@@ -1,0 +1,26 @@
+{
+    "name": "@repo/db",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./src/index.ts",
+    "types": "./src/index.ts",
+    "license": "MIT",
+    "scripts": {
+        "db:push": "drizzle-kit push",
+        "db:studio": "drizzle-kit studio",
+        "db:generate": "drizzle-kit generate",
+        "db:migrate": "drizzle-kit migrate"
+    },
+    "dependencies": {
+        "drizzle-orm": "latest",
+        "@libsql/client": "latest"
+    },
+    "devDependencies": {
+        "@repo/eslint-config": "workspace:*",
+        "@repo/typescript-config": "workspace:*",
+        "@types/node": "latest",
+        "drizzle-kit": "latest",
+        "typescript": "latest",
+        "eslint": "latest"
+    }
+}
