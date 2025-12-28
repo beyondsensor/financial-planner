@@ -10,11 +10,16 @@
         "generate:component": "npx shadcn-ui@latest add"
     },
     "dependencies": {
+        "@hookform/resolvers": "^5.2.2",
+        "@radix-ui/react-label": "^2.1.8",
+        "@radix-ui/react-slot": "^1.2.4",
         "class-variance-authority": "latest",
         "clsx": "latest",
         "lucide-react": "latest",
         "next-themes": "latest",
-        "tailwind-merge": "latest"
+        "react-hook-form": "^7.69.0",
+        "tailwind-merge": "latest",
+        "zod": "^4.2.1"
     },
     "peerDependencies": {
         "react": "^19",
